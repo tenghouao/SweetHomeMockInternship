@@ -1176,7 +1176,7 @@ public class FurnitureTable extends JTable implements View, Printable {
         case WIDTH :
         case DEPTH :
         case HEIGHT :
-        case VOLUME:
+        case VOLUME :
         case X : 
         case Y :
         case ELEVATION : 
