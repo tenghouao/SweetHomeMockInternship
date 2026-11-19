@@ -442,6 +442,18 @@ public class HomeFurnitureGroup extends HomePieceOfFurniture {
       return super.getHeight();
     }
   }
+
+  /**
+   * Returns the volume of this group.
+   */
+  @Override
+  public float getVolume() {
+    if (!this.resizable) {
+      return this.fixedWidth * this.fixedDepth * this.fixedHeight;
+    } else {
+      return super.getWidth() * super.getDepth() * super.getHeight();
+    }
+  }
   
   /**
    * Returns the elevation at which should be placed an object dropped on this group.
